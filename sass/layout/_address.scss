@@ -1,0 +1,32 @@
+.address {
+  font-style: normal;
+  &--margin-top {
+    margin-top: 20px;
+  }
+
+  &__list {
+    line-height: calc(24 / 14);
+  }
+
+  &__map {
+    margin-bottom: 9px;
+    color: #ffffff;
+  }
+
+  &__item {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    transition: color var(--transition-time);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--main-link-cl);
+  }
+}
