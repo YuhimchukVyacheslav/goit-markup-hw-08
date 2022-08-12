@@ -1,7 +1,20 @@
+// .customers__list {
+//   display: flex;
+//   gap: 30px;
+// }
+
 .customers__list {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
+
+// .customers__item {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
 .customers__link {
   display: flex;
@@ -9,15 +22,21 @@
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: var(--main-icon-cl);
   transition: color var(--transition-time), border var(--transition-time);
-  
+
   &:hover,
   &:focus {
     border: 1px solid var(--main-link-cl);
     color: var(--main-link-cl);
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
