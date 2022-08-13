@@ -6,6 +6,10 @@
 
   &__list {
     line-height: calc(24 / 14);
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
   }
 
   &__map {
