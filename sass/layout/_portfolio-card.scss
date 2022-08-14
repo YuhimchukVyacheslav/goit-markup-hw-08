@@ -1,7 +1,26 @@
 .portfolio-card {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: var(--indent);
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    --items: 2;
+    }
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+          --items: 3;
+    }
+
+
+
+    &__item{
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+
+    }
     &__link {
     transition: box-shadow var(--transition-time);
 

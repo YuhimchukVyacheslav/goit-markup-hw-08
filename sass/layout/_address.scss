@@ -29,8 +29,13 @@
     transition: color var(--transition-time);
   }
 
-  &__link:hover,
-  &__link:focus {
+  &__link:active {
     color: var(--main-link-cl);
+  }
+  @media screen and (min-width: 1200px) {
+    &__link:hover,
+    &__link:focus {
+      color: var(--main-link-cl);
+    }
   }
 }

@@ -23,12 +23,18 @@
   <!-- header -->
   <header class="header">
     <div class="header__container container">
-      <a class="logo logo--margin-right link" href="index.html" lang="en"><span class="logo--accent-color">Web</span><span
-          class="logo--black-color">Studio</span></a>
+      <a class="logo logo--margin-right link" href="index.html" lang="en"><span
+          class="logo--accent-color">Web</span><span class="logo--black-color">Studio</span></a>
+      <!-- Mobile button open -->
+      <button class="menu-btn" type="button" data-menu-open>
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list list">
           <li class="nav__item list">
-            <a class="nav__link link" href="./index.html">Студія</a>
+            <a class="nav__link  link" href="./index.html">Студія</a>
           </li>
           <li class="nav__item list">
             <a class="nav__link nav__link--current link" href="./portfolio.html">Портфоліо</a>
@@ -54,7 +60,6 @@
       </ul>
     </div>
   </header>
-
   <main>
     <!-- Чем занимается компания, примеры работ -->
 
@@ -80,7 +85,7 @@
         </ul>
 
         <ul class="portfolio-card list">
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -88,8 +93,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="img" src="./images/portfolio/portfolio-1.jpg" alt="Технокряк"
-                  width="370" />
+              <img
+              srcset="
+              ./images/portfolio/portfolio-1@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-1@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-1@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-1@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-1@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-1@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-1@1x-450_mob.jpg" alt="Технокряк"
+               />
+
+                <!-- <img class="img" src="./images/portfolio/portfolio-1.jpg" alt="Технокряк"
+                  width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title">Технокряк</h2>
@@ -97,7 +119,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -105,8 +127,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <img class="img" src="./images/portfolio/portfolio-2.jpg"
-                  alt="Постер New Orlean vs Golden Star" width="370" />
+              <img
+              srcset="
+              ./images/portfolio/portfolio-2@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-2@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-2@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-2@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-2@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-2@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-2@1x-450_mob.jpg" alt="Постер New Orlean vs Golden Star"
+               />
+
+                <!-- <img class="img" src="./images/portfolio/portfolio-2.jpg"
+                  alt="Постер New Orlean vs Golden Star" width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title">Постер New Orlean vs Golden Star</h2>
@@ -114,7 +153,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -122,9 +161,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+              <img
+              srcset="
+              ./images/portfolio/portfolio-3@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-3@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-3@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-3@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-3@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-3@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-3@1x-450_mob.jpg" alt="Ресторан Seafood"
+               />
 
-                <img class="img" src="./images/portfolio/portfolio-3.jpg" alt="Ресторан Seafood"
-                  width="370" />
+                <!-- <img class="img" src="./images/portfolio/portfolio-3.jpg" alt="Ресторан Seafood"
+                  width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title">Ресторан Seafood</h2>
@@ -132,7 +187,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -140,9 +195,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+              <img
+              srcset="
+              ./images/portfolio/portfolio-4@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-4@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-4@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-4@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-4@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-4@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-4@1x-450_mob.jpg" alt="Проект Prime"
+               />
 
-                <img class="img" src="./images/portfolio/portfolio-4.jpg" alt="Проект Prime"
-                  width="370" />
+                <!-- <img class="img" src="./images/portfolio/portfolio-4.jpg" alt="Проект Prime"
+                  width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title">Проект Prime</h2>
@@ -150,7 +221,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -158,9 +229,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+              <img
+              srcset="
+              ./images/portfolio/portfolio-5@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-5@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-5@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-5@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-5@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-5@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-5@1x-450_mob.jpg" alt="Проект Boxes"
+               />
 
-                <img class="img" src="./images/portfolio/portfolio-5.jpg" alt="Проект Boxes"
-                  width="370" />
+                <!-- <img class="img" src="./images/portfolio/portfolio-5.jpg" alt="Проект Boxes"
+                  width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title">Проект Boxes</h2>
@@ -168,7 +255,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -176,9 +263,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+              <img
+              srcset="
+              ./images/portfolio/portfolio-6@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-6@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-6@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-6@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-6@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-6@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-6@1x-450_mob.jpg" alt="Inspiration has no Borders"
+               />
 
-                <img class="img" src="./images/portfolio/portfolio-6.jpg"
-                  alt="Inspiration has no Borders" width="370" />
+                <!-- <img class="img" src="./images/portfolio/portfolio-6.jpg"
+                  alt="Inspiration has no Borders" width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title" lang="en">Inspiration has no Borders</h2>
@@ -186,7 +289,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -194,9 +297,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+              <img
+              srcset="
+              ./images/portfolio/portfolio-7@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-7@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-7@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-7@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-7@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-7@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-7@1x-450_mob.jpg" alt="Издание Limited Edition"
+               />
 
-                <img class="img" src="./images/portfolio/portfolio-7.jpg" alt="Издание Limited Edition"
-                  width="370" />
+                <!-- <img class="img" src="./images/portfolio/portfolio-7.jpg" alt="Издание Limited Edition"
+                  width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title">Видавництво Limited Edition</h2>
@@ -204,7 +323,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -212,9 +331,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+              <img
+              srcset="
+              ./images/portfolio/portfolio-8@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-8@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-8@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-8@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-8@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-8@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-8@1x-450_mob.jpg" alt="Проект LAB"
+               />
 
-                <img class="img" src="./images/portfolio/portfolio-8.jpg" alt="Проект LAB"
-                  width="370" />
+                <!-- <img class="img" src="./images/portfolio/portfolio-8.jpg" alt="Проект LAB"
+                  width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title">Проект LAB</h2>
@@ -222,7 +357,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="portfolio-card__item">
             <a class="portfolio-card__link link" href="#">
               <div class="portfolio-card__thumb">
                 <div class="portfolio-card__overlay">
@@ -230,9 +365,25 @@
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+              <img
+              srcset="
+              ./images/portfolio/portfolio-9@1x-354_tab.jpg 354w, 
+              ./images/portfolio/portfolio-9@1x-370_pc.jpg 370w, 
+              ./images/portfolio/portfolio-9@1x-450_mob.jpg 450w, 
+              ./images/portfolio/portfolio-9@2x-708_tab.jpg 708w, 
+              ./images/portfolio/portfolio-9@2x-740_pc.jpg 740w,
+              ./images/portfolio/portfolio-9@2x-900_mob.jpg 900w
+              "
+              sizes="
+              (min-width: 1200px) 370px, 
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px 100vw
+              "
+              class="img" src="images/portfolio/portfolio-9@1x-450_mob.jpg" alt="Growing Business"
+               />
 
-                <img class="img" src="./images/portfolio/portfolio-9.jpg" alt="Growing Business"
-                  width="370" />
+                <!-- <img class="img" src="./images/portfolio/portfolio-9.jpg" alt="Growing Business"
+                  width="370" /> -->
               </div>
               <div class="portfolio-card__wrapper">
                 <h2 class="portfolio-card__title" lang="en">Growing Business</h2>
@@ -248,8 +399,8 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__address">
-        <a class="logo link" href="index.html" lang="en"><span
-            class="logo--accent-color">Web</span><span class="logo--white-color">Studio</span></a>
+        <a class="logo link" href="index.html" lang="en"><span class="logo--accent-color">Web</span><span
+            class="logo--white-color">Studio</span></a>
         <address class="address address--margin-top">
           <ul class="address__list list">
             <li class="address__map list">
@@ -265,32 +416,36 @@
           </ul>
         </address>
       </div>
-      <div class="footer-socials footer-socials--margin-left">
-        <h3 class="footer-title footer-title--margin-bottom">приєднуйтесь</h3>
+      <div class="footer__socials">
+        <h3 class="footer__title">приєднуйтесь</h3>
         <ul class="socials list">
           <li class="socials__icon">
-            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank"
+              rel="noopener noreferrer" aria-label="instagram">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="socials__icon">
-            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank"
+              rel="noopener noreferrer" aria-label="twitter">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="socials__icon link">
-            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank"
+              rel="noopener noreferrer" aria-label="facebook">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__icon link">
-            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+            <a class="socials__link socials__link--bg-color socials__link--white-color" href="#" target="_blank"
+              rel="noopener noreferrer" aria-label="linkedin">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
@@ -299,7 +454,7 @@
         </ul>
       </div>
       <div class="subscribe subscribe--margin-left">
-        <h3 class="footer-title footer-title--margin-bottom">Підпишіться на розсилку</h3>
+        <h3 class="footer__title">Підпишіться на розсилку</h3>
         <form class="subscribe__form" name="mailing-list-form">
           <label for="subscribe__input"></label>
           <input class="subscribe__input" type="email" name="mailing-list" id="subscribe-input" placeholder="E-mail"
@@ -314,6 +469,54 @@
       </div>
     </div>
   </footer>
+  <!-- Mobile menu -->
+  <div class="mobmenu" data-menu>
+    <button class="menu-btn menu-btn--close" type="button" data-menu-close>
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <ul class="mobmenu__list list">
+      <li class="mobmenu__item list">
+        <a class="mobmenu__link  link" href="./index.html">Студія</a>
+      </li>
+      <li class="mobmenu__item list">
+        <a class="mobmenu__link nav__link--current link" href="./portfolio.html">Портфоліо</a>
+      </li>
+      <li class="mobmenu__item list">
+        <a class="mobmenu__link link" href="#">Контакти</a>
+      </li>
+    </ul>
+    <ul class="mobmenu__list list">
+      <li class="mobmenu__tel">
+        <a class="mobmenu__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </li>
+
+      <li class="mobmenu__mail">
+        <a class="mobmenu__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="mobmenu__social list">
+      <li class="mobmenu__social--item">
+        <a class="mobmenu__social--link link" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="instagram">Instagram</a>
+      </li>
+      <li class="mobmenu__social--item">
+        <a class="mobmenu__social--link link" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="twitter">Twitter</a>
+      </li>
+      <li class="mobmenu__social--item">
+        <a class="mobmenu__social--link link" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="facebook">Facebook</a>
+      </li>
+      <li class="mobmenu__social--item">
+        <a class="mobmenu__social--link link" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="linkedin">Linkedin</a>
+      </li>
+    </ul>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 
 </body>
 </html>
