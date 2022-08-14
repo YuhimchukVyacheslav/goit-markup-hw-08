@@ -1,17 +1,8 @@
-// .subscribe{
-//     margin-left: auto;
-// }
-
 .subscribe {
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
 }
-
-// .subscribe__form {
-//   display: flex;
-//   align-items: center;
-// }
 
 .subscribe__form {
   display: flex;
@@ -53,7 +44,3 @@
     border-color: var(--main-link-cl);
   }
 }
-
-// .subscribe--margin-left {
-//   margin-left: auto;
-// }

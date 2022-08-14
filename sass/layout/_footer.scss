@@ -1,24 +1,3 @@
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   background: var(--dark-bg-cl);
-
-//   &__container {
-//     display: flex;
-//     align-items: baseline;
-//   }
-//   &-title {
-//     font-size: 14px;
-//     line-height: calc(16 / 14);
-//     text-transform: uppercase;
-//     color: var(--btn-txt-cl);
-//   }
-
-//   &-title--margin-bottom {
-//     margin-bottom: 20px;
-//   }
-// }
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -47,18 +26,6 @@
     }
   }
 }
-
-// .footer__socials {
-//   margin-bottom: 60px;
-//   @media screen and (min-width: 1200px) {
-//     margin-left: 70px;
-//     margin-bottom: 0px;
-//   }
-// }
-
-// .footer__socials--margin-left {
-//     margin-left: 70px;
-// }
 
 .footer__container {
   @media screen and (min-width: 1200px) {

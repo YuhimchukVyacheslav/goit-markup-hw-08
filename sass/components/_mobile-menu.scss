@@ -6,7 +6,6 @@
   left: 0;
 
   transform: translateY(100%);
-
   transition: var(--transition-time);
 
   width: 100%;
@@ -15,8 +14,6 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-
-  //   padding-top: 48px;
 
   background-color: var(--btn-txt-cl);
   opacity: 0;
@@ -32,11 +29,12 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
 
-.mobmenu__list:nth-child(2) {
+  &__list:nth-child(2) {
   margin-bottom: auto;
 }
+}
+
 
 .menu-btn {
   position: absolute;

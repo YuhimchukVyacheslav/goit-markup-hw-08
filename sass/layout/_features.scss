@@ -1,5 +1,4 @@
 .features__list {
-  // display: flex;
   display: inline-flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -18,8 +17,6 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
-
-  // width: 270px;
 }
 
 .features__icon {
@@ -29,7 +26,6 @@
 
   margin-bottom: 30px;
 
-  //   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
 }
