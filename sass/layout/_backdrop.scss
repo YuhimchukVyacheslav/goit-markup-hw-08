@@ -6,6 +6,10 @@
   height: 100%;
   opacity: 1;
   visibility: visible;
+  @media screen and (max-width: 479px) {
+    overflow-y: scroll;
+  }
+
   transition: opacity var(--transition-time);
   background-color: rgba(0, 0, 0, 0.2);
 

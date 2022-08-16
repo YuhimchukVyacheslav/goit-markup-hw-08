@@ -9,7 +9,7 @@
 }
 
 .features__item {
-  max-width: 450px;
+  width: 450px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border-radius: 4px;
   margin-bottom: 30px;
 
   height: 120px;
@@ -32,14 +32,17 @@
 
 .features__title {
   margin-bottom: 10px;
-
+text-align: center;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
+      @media screen and (min-width: 768px) {
+  text-align: left;
+  }
+
 }
 
 .features__descr {
   line-height: calc(24 / 14);
   color: var(--main-txt-item);
-  
 }

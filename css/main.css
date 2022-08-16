@@ -238,7 +238,7 @@ p {
 }
 
 .subscribe__input {
-  min-width: 320px;
+  min-width: 290px;
   max-width: 450px;
   height: 50px;
   margin-bottom: 20px;
@@ -471,8 +471,12 @@ p {
   transition: color var(--transition-time);
 }
 .nav__link--current {
-  position: relative;
   color: var(--main-link-cl);
+}
+@media screen and (min-width: 767px) {
+  .nav__link--current {
+    position: relative;
+  }
 }
 .nav__link--current::after {
   position: absolute;
@@ -491,22 +495,28 @@ p {
 
 .hero__container {
   text-align: center;
-  height: 600px;
+  height: 400px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: #c4c4c4;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 47, 58, 0.4)), to(rgba(47, 47, 58, 0.4))), url(../../images/hero-bgn/hero-bgn@1x-480_mob.jpg);
-  background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../../images/hero-bgn/hero-bgn@1x-480_mob.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 47, 58, 0.4)), to(rgba(47, 47, 58, 0.4))), url(../images/hero-bgn/hero-bgn@1x-480_mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../images/hero-bgn/hero-bgn@1x-480_mob.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    height: 600px;
+    padding: 200px 0;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__container {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 47, 58, 0.4)), to(rgba(47, 47, 58, 0.4))), url(../../images/hero-bgn/hero-bgn@2x-960_mob.jpg);
-    background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../../images/hero-bgn/hero-bgn@2x-960_mob.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 47, 58, 0.4)), to(rgba(47, 47, 58, 0.4))), url(../images/hero-bgn/hero-bgn@2x-960_mob.jpg);
+    background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../images/hero-bgn/hero-bgn@2x-960_mob.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -581,7 +591,7 @@ p {
 }
 
 .features__item {
-  max-width: 450px;
+  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -604,6 +614,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 4px;
   margin-bottom: 30px;
   height: 120px;
   background-color: #f5f4fa;
@@ -611,9 +622,15 @@ p {
 
 .features__title {
   margin-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .features__descr {
@@ -744,6 +761,11 @@ p {
             justify-content: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .filters {
+    row-gap: 15px;
+  }
+}
 .filters__btn:active {
   background-color: var(--main-link-cl);
   color: var(--btn-txt-cl);
@@ -814,7 +836,14 @@ p {
   transition: -webkit-box-shadow var(--transition-time);
   transition: box-shadow var(--transition-time);
   transition: box-shadow var(--transition-time), -webkit-box-shadow var(--transition-time);
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 .portfolio-card__link:hover, .portfolio-card__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -866,6 +895,9 @@ p {
   padding-bottom: 20px;
   border: 1px solid var(--border-cl);
   border-top: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .portfolio-card__title {
   margin-bottom: 4px;
@@ -979,20 +1011,26 @@ p {
 
 .footer__address {
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .footer__address {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-left: 76px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-left: 0;
+    text-align: left;
   }
 }
 
@@ -1055,6 +1093,11 @@ p {
   transition: opacity var(--transition-time);
   background-color: rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 479px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1068,8 +1111,8 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -15%) scale(1);
+          transform: translate(-50%, -15%) scale(1);
   -webkit-transition: -webkit-transform var(--transition-time);
   transition: -webkit-transform var(--transition-time);
   transition: transform var(--transition-time);
@@ -1081,6 +1124,12 @@ p {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
 }
 @media screen and (max-width: 1199px) {
   .modal {
