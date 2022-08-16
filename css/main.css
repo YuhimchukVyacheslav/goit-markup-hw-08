@@ -591,7 +591,7 @@ p {
 }
 
 .features__item {
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -986,9 +986,6 @@ p {
             flex-direction: column;
     margin-left: 165px;
     margin-bottom: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -998,6 +995,9 @@ p {
   }
 }
 
+.footer__container {
+  text-align: center;
+}
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;
@@ -1031,6 +1031,9 @@ p {
   .footer__address {
     margin-left: 0;
     text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

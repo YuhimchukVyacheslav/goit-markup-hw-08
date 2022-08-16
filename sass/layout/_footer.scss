@@ -17,7 +17,6 @@
       flex-direction: column;
       margin-left: 165px;
       margin-bottom: 0;
-      align-items: center;
     }
 
     @media screen and (min-width: 1200px) {
@@ -28,6 +27,8 @@
 }
 
 .footer__container {
+    text-align: center;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -40,15 +41,14 @@
   display: inline-flex;
   flex-direction: column;
 
-
   @media screen and (min-width: 768px) {
     margin-left: 76px;
   }
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 0;
     text-align: left;
+    align-items: flex-start;
   }
-
 }
 
 .footer__title {
