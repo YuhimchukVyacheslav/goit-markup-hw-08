@@ -37,7 +37,7 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../../images/hero-bgn/hero-bgn@2x-1536_tab.jpg);
+      background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../images/hero-bgn/hero-bgn@2x-1536_tab.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -47,7 +47,7 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../../images/hero-bgn/hero-bgn@2x-3200_pc.jpg);
+      background-image: linear-gradient(to right, rgba(47, 47, 58, 0.4), rgba(47, 47, 58, 0.4)), url(../images/hero-bgn/hero-bgn@2x-3200_pc.jpg);
     }
   }
 }
